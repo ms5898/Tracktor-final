@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
-- [Dataset Prepar](#Dataset-Prepare)
+- [Dataset Prepare](#Dataset-Prepare)
 - [Training the Faster R-CNN for Tracktor](#Training-the-Faster-R-CNN-for-Tracktor)
 - [Get the tracking result on CVAT videos](#Get-the-tracking-result-on-CVAT-videos)
 - [Do evaluation](#Do-evaluation)
@@ -138,11 +138,54 @@ cp references/detection/coco_utils.py ../
 * Look the ``Tracktor/experiments/cfgs/tracktor.yaml`` change some super parameter as you like
 
 * To get the result on 10 CVAT videos, you can run ``python test_tracktor.py``
+
+* After that you will find the result saved in ``Tracktor/output/tracktor/COSMOS/Tracktor++`` in .txt and MOT format
 ---
 ## Do evaluation
+* Use the .txt files get in the above step do the MOT evaluation
+
+* You can use the ``Notebook_experiment/Do MOT Evaluation on CVAT video.ipynb`` to check the MOT result.
+
+**Table of Tracktor evaluation result**
+
+**VEHICLE**
+
+| Video Name  | MOTA  | MOTP  |
+|:----------|:----------|:----------|
+| traffic_video_GP020614_190720_0237_0407_90sec_calibrated    | 96.5    | 77.0    |   
+| traffic_video_GP020587_190720_0900_1030_90sec_calibrated    |  72.4   |  78.2   |   
+| traffic_video_GP010615_190724_0545_0715_90sec_calibrated    |  88.2  |  81.1  |
+|  traffic_video_HIKL1D190911T153514_20190920_0700_0830_90sec_calibration   | 80.9   |  83.6  |   
+|  traffic_video_HIKL1D190821T200329_190916_1715_1845_90sec_calied   | 83.2   | 74.7   |    
+| traffic_video_GP010589_190720_0310_0440_90sec_calibrated    |  43.6  |  69.1  |    
+|  traffic_video_GOPR0589_190720_1324_1454_90sec_calibrated   |  60.0  |  75.1  |  
+|  traffic_video_HIKL1D190821T200329_190919_2350_2520_90sec_calied   | 68.6   |  72.1  |  
+|  traffic_video_HIKL1D190821T000900_190920_0152_0322_90sec_calied   |  89.7  |  81.2  |   
+| **Average**   |  **75.9**  |  **76.9**  |
+
+**PEDESTRIAN**
+
+| Video Name  | MOTA  | MOTP  |
+|:----------|:----------|:----------|
+|  traffic_video_GP020614_190720_0237_0407_90sec_calibrated   |   43.9  |   64.0  |
+|  traffic_video_GP020587_190720_0900_1030_90sec_calibrated   |   37.7  |   61.2  |
+|   traffic_video_GP010615_190724_0545_0715_90sec_calibrated  |  53.1  |  67.5   |
+| traffic_video_HIKL1D190911T153514_20190920_0700_0830_90sec_calibration    |  -13.4   |  64.1   |
+|  traffic_video_HIKL1D190821T200329_190916_1715_1845_90sec_calied   |  17.7   |  67.0   |
+|  traffic_video_GP010589_190720_0310_0440_90sec_calibrated   |  -50.2   |   59.3  |
+|  traffic_video_GOPR0589_190720_1324_1454_90sec_calibrated   |  5.8   |  62.7   |
+|  traffic_video_HIKL1D190821T200329_190919_2350_2520_90sec_calied   |   -46.9  |  61.8   |
+|  traffic_video_HIKL1D190821T000900_190920_0152_0322_90sec_calied   |  6.3   |   69.3  |
+| **Average**   |  **6.0**  |  **64.1**  |
 
 ---
 ## Generate the result to see
+
+* If you get the .txt files you can use them to get the video for visualization, you can find the detail in ``Notebook_experiment/Change MOT result to video.ipynb``
+
+**A segment from the result video**
+
+![gif show](img/result_show.gif)
 
 ---
 ## References
