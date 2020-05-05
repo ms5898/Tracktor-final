@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39940d10-6714-474b-8c29-772bb0f90b01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset/data_prepare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/process_mask_result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/process_track_VandP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebook_experiment/.ipynb_checkpoints/process tracking data and show-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook_experiment/.ipynb_checkpoints/process tracking data and show-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebook_experiment/process tracking data and show.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook_experiment/process tracking data and show.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/cosmos_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/cosmos_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +21,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset/cosmos_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="351">
+              <caret line="1951" column="42" selection-start-line="1951" selection-start-column="4" selection-end-line="1951" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataset/process_track_VandP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1813">
+              <caret line="305" column="42" selection-start-line="305" selection-start-column="42" selection-end-line="305" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset/process_mask_result.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1309">
@@ -39,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/dataset/data_prepare.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="42" />
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
               </folding>
@@ -56,6 +75,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>COSMOSDatasetTtoD</find>
+      <find>TtoD</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -63,19 +88,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dataset/data_prepare.py" />
-        <option value="$PROJECT_DIR$/dataset/cosmos_dataset.py" />
         <option value="$PROJECT_DIR$/dataset/process_mask_result.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Tracktor-final.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
+        <option value="$PROJECT_DIR$/dataset/cosmos_dataset.py" />
+        <option value="$PROJECT_DIR$/dataset/process_tracking_Vandp.py" />
+        <option value="$PROJECT_DIR$/dataset/process_track_VandP.py" />
       </list>
     </option>
   </component>
@@ -83,6 +99,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -108,6 +125,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -136,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588613996817</updated>
-      <workItem from="1588614000205" duration="6298000" />
+      <workItem from="1588614000205" duration="9391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6298000" />
+    <option name="totallyTimeSpent" value="9391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -176,17 +194,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataset/cosmos_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset/data_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="42" />
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
           </folding>
@@ -199,6 +210,29 @@
           <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
           <folding>
             <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/process_tracking_Vandp.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/cosmos_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="1951" column="42" selection-start-line="1951" selection-start-column="4" selection-end-line="1951" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/process_track_VandP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1813">
+          <caret line="305" column="42" selection-start-line="305" selection-start-column="42" selection-end-line="305" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,8 @@
 # Tracktor-final
+**Mingfei Sun (ms5898)**
+
+- [Dataset Prepar](##Dataset-Prepare)
+- [Get the tracking result on CVAT videos](##Get-the-tracking-result-on-CVAT-videos)
 
 ## Dataset Prepare
 #### You can just download from the google cloud:
@@ -35,7 +39,7 @@ After that you will find there are three folder in your ``COSMOS_data_tracktor/d
 
 * change the original format to [MOT format](https://motchallenge.net) by runing the jupyter notebook ``Notebook_experiment/process tracking data and show.ipynb``
 
-* After that you will find all videos are saved as MOT format in ``COSMOS_data_tracktor/Track_data_cosmos/v_and_p``, you can delete the folder ``CVAT`` if ou want.
+* After that you will find all videos are saved as MOT format in ``COSMOS_data_tracktor/Track_data_cosmos/v_and_p``, ``COSMOS_data_tracktor/Track_data_cosmos/only_v`` and ``COSMOS_data_tracktor/Track_data_cosmos/only_p`` you can delete the folder ``CVAT`` if you want.
 
 * Yoy can use ``Notebook_experiment/sequence dataset for test.ipynb`` to check the tracking data format
 
@@ -79,6 +83,8 @@ ProjectTrafficIntersection.COSMOS.V2
 |    |
 |    |---Track_data_cosmos
 |    |   |---v_and_p
+|    |   |---only_v
+|    |   |---only_p
 |    |
 |    |---mask_detect_result
 |    |   |---traffic_video_GOPR0589_190720_1324_1454_90sec_calibrated.mp4.txt
@@ -97,7 +103,45 @@ ProjectTrafficIntersection.COSMOS.V2
 
 ---
 ## Training the Faster R-CNN for Tracktor
-1. 
+1. First you should run the command below to install some scripts for training:
+```
+# Install pycocotools
+git clone https://github.com/cocodataset/cocoapi.git
+cd cocoapi/PythonAPI
+python setup.py build_ext install
+
+# Download TorchVision repo to use some files from
+# references/detection
+git clone https://github.com/pytorch/vision.git
+cd vision
+
+cp references/detection/utils.py ../
+cp references/detection/transforms.py ../
+cp references/detection/coco_eval.py ../
+cp references/detection/engine.py ../
+cp references/detection/coco_utils.py ../
+```
+
+2. Train the Faster R-CNN to predit pedestrians next location: ``Notebook_experiment/Faster R-CNN Training Origin & Aug_ pedestrian.ipynb``. After that you will get models saved in ``COSMOS_data_tracktor/frcnn_cosmos_output/faster_rcnn_fpn_training_cosmos``
+
+3. Train the Faster R-CNN to predit vehicles next location: ``Notebook_experiment/Faster R-CNN Training Origin & Aug_ vehicle.ipynb``. After that you will get models saved in ``COSMOS_data_tracktor/frcnn_cosmos_output/faster_rcnn_fpn_training_cosmos_P ``
+
+---
+## Get the tracking result on CVAT videos
+
+* Look the ``Tracktor/experiments/cfgs/tracktor.yaml`` change some super parameter as you like
+
+* To get the result on 10 CVAT videos, you can run ``python test_tracktor.py``
+---
+## Do evaluation
+
+---
+## Generate the result to see
+
+---
+## References
+1. Bergmann, P., Meinhardt, T. and Leal-Taixe, L., 2019. Tracking without bells and whistles. In Proceedings of the IEEE International Conference on Computer Vision (pp. 941-951).
+2. [phil-bergmann/tracking_wo_bnw](https://github.com/phil-bergmann/tracking_wo_bnw)
 
 
 
