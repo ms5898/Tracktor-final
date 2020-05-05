@@ -3,12 +3,16 @@
 
 ## Table of Contents
 
+- [Dependencies](#Dependencies)
 - [Dataset Prepare](#Dataset-Prepare)
 - [Training the Faster R-CNN for Tracktor](#Training-the-Faster-R-CNN-for-Tracktor)
 - [Get the tracking result on CVAT videos](#Get-the-tracking-result-on-CVAT-videos)
 - [Do evaluation](#Do-evaluation)
 - [Generate the result to see](#Generate-the-result-to-see)
 - [References](#References)
+
+## Dependencies
+To install all dependency packages, run the command `$ pip install -r requirements.txt`. Use python 3.
 
 ## Dataset Prepare
 #### You can just download from the google cloud:

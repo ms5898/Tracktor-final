@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39940d10-6714-474b-8c29-772bb0f90b01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset/eval_track.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook_experiment/.ipynb_checkpoints/Process mask rcnn and show the result-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook_experiment/.ipynb_checkpoints/Process mask rcnn and show the result-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook_experiment/.ipynb_checkpoints/process tracking data and show-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook_experiment/.ipynb_checkpoints/process tracking data and show-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook_experiment/Process mask rcnn and show the result.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook_experiment/Process mask rcnn and show the result.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook_experiment/process tracking data and show.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook_experiment/process tracking data and show.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="39940d10-6714-474b-8c29-772bb0f90b01" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,12 +159,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588613996817</updated>
-      <workItem from="1588614000205" duration="14511000" />
+      <workItem from="1588614000205" duration="15304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14511000" />
+    <option name="totallyTimeSpent" value="15304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
