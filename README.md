@@ -1,8 +1,14 @@
 # Tracktor-final
 **Mingfei Sun (ms5898)**
 
+## Table of Contents
+
 - [Dataset Prepar](#Dataset-Prepare)
+- [Training the Faster R-CNN for Tracktor](#Training-the-Faster-R-CNN-for-Tracktor)
 - [Get the tracking result on CVAT videos](#Get-the-tracking-result-on-CVAT-videos)
+- [Do evaluation](#Do-evaluation)
+- [Generate the result to see](#Generate-the-result-to-see)
+- [References](#References)
 
 ## Dataset Prepare
 #### You can just download from the google cloud:
