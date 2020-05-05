@@ -1,8 +1,8 @@
 # Tracktor-final
 **Mingfei Sun (ms5898)**
 
-- [Dataset Prepar](##Dataset-Prepare)
-- [Get the tracking result on CVAT videos](##Get-the-tracking-result-on-CVAT-videos)
+- [Dataset Prepar](#Dataset-Prepare)
+- [Get the tracking result on CVAT videos](#Get-the-tracking-result-on-CVAT-videos)
 
 ## Dataset Prepare
 #### You can just download from the google cloud:
